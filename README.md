@@ -28,13 +28,13 @@ Audio upload
 FastAPI validation + temporary storage
     │
     ▼
-OpenAI transcription API ──► transcript
-    │                         │
-    └─────────────────────────▼
-                  OpenAI structured analysis
+Local faster-whisper transcription ──► transcript
+    │                                    │
+    └────────────────────────────────────▼
+                    Local Ollama analysis
                             │
                             ▼
-             validated result returned to Streamlit
+             Pydantic-validated result returned to Streamlit
 ```
 
 ## Tech stack
