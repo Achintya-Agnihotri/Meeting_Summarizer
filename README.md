@@ -1,6 +1,4 @@
-# Meeting Summarizer
 
-Turn a meeting recording into a reliable transcript, executive summary, explicit decisions, and actionable follow-ups.
 
 ## Problem
 
@@ -107,3 +105,6 @@ Tests cover structured-output validation and basic API input behavior without ne
 ## Limitations
 
 Transcription quality depends on audio clarity, overlap, language support, and background noise. Local processing speed depends on your computer; the first request may be slower while Whisper downloads. Implicit responsibilities may be omitted intentionally because the application reports only transcript-supported facts.
+
+# Meeting_Summarizer
+AI meeting summarizer that converts audio into transcripts, key decisions, summaries, and actionable tasks.
