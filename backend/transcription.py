@@ -34,7 +34,7 @@ def transcribe_audio(audio_path: Path, settings: Settings) -> str:
             settings.whisper_cpu_threads,
             settings.whisper_num_workers,
         )
-        segments, _ = model.transcribe(str(audio_path), vad_filter=True)
+        segments, _ = model.transcribe(str(audio_path), vad_filter=True, beam_size=1)
         transcript = " ".join(segment.text.strip() for segment in segments).strip()
     except ImportError as error:
         raise MeetingProcessingError("Local transcription is not installed. Run pip install -r requirements.txt.", 503) from error

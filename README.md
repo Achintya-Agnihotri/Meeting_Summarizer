@@ -65,6 +65,14 @@ OLLAMA_MODEL=llama3.2:1b
 
 The models are stored in `local_models/` on the D: drive. The free Whisper model downloads on the first transcription.
 
+## Run Ollama
+
+In a separate terminal, start the local Ollama server:
+
+```bash
+ollama serve
+```
+
 ## Run the backend
 
 ```bash
